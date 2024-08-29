@@ -1,0 +1,9 @@
+[submodule "examples"]
+	path = examples
+	url = git@github.com:go-orb/examples.git
+[submodule "go-orb"]
+	path = go-orb
+	url = git@github.com:go-orb/go-orb.git
+[submodule "plugins"]
+	path = plugins
+	url = git@github.com:go-orb/plugins.git
