@@ -1,9 +1,10 @@
-go 1.22.5
+go 1.23
 
 use (
 	./examples/benchmarks/event
 	./examples/benchmarks/rps
 	./examples/benchmarks/rps_no_hertz
+	./examples/event/simple
 	./go-orb
 	./plugins/client/middleware/log
 	./plugins/client/orb
