@@ -7,3 +7,6 @@
 [submodule "plugins"]
 	path = plugins
 	url = git@github.com:go-orb/plugins.git
+[submodule ".github"]
+	path = .github
+	url = git@github.com:go-orb/.github.git
