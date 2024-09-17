@@ -1,12 +1,15 @@
 [submodule "examples"]
 	path = examples
-	url = git@github.com:go-orb/examples.git
+	url = https://github.com/go-orb/examples.git
 [submodule "go-orb"]
 	path = go-orb
-	url = git@github.com:go-orb/go-orb.git
+	url = https://github.com/go-orb/go-orb.git
 [submodule "plugins"]
 	path = plugins
-	url = git@github.com:go-orb/plugins.git
+	url = https://github.com/go-orb/plugins.git
 [submodule ".github"]
 	path = .github
-	url = git@github.com:go-orb/.github.git
+	url = https://github.com/go-orb/.github.git
+[submodule "plugins-experimental"]
+	path = plugins-experimental
+	url = https://github.com/go-orb/plugins-experimental.git
