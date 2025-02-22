@@ -1,33 +1,40 @@
-go 1.23
+go 1.23.0
+
+toolchain go1.23.2
 
 use (
 	./examples/benchmarks/event
 	./examples/benchmarks/rps
-	./examples/benchmarks/rps_no_hertz
 	./examples/event/simple
 	./go-orb
+	./plugins-experimental/client/orb/transport/basehertz
+    ./plugins-experimental/client/orb/transport/hertzh2c
+	./plugins-experimental/client/orb/transport/hertzhttp
+	./plugins-experimental/registry/mdns
+	./plugins-experimental/registry/nats
+	./plugins-experimental/server/hertz
 	./plugins/client/middleware/log
 	./plugins/client/orb
-	./plugins/client/orb/transport/basehertz
-	./plugins/client/orb/transport/basehttp
 	./plugins/client/orb/transport/drpc
 	./plugins/client/orb/transport/grpc
 	./plugins/client/orb/transport/h2c
-	./plugins/client/orb/transport/hertzh2c
-	./plugins/client/orb/transport/hertzhttp
 	./plugins/client/orb/transport/http
 	./plugins/client/orb/transport/http3
 	./plugins/client/orb/transport/https
 	./plugins/client/tests
 	./plugins/codecs/form
+	./plugins/codecs/goccyjson
+	./plugins/codecs/json
 	./plugins/codecs/jsonpb
 	./plugins/codecs/proto
 	./plugins/codecs/yaml
+	./plugins/config/source/cli/tests
 	./plugins/config/source/cli/urfave
 	./plugins/config/source/file
 	./plugins/config/source/http
 	./plugins/config/tests
 	./plugins/event/natsjs
+	./plugins/event/tests
 	./plugins/log/lumberjack
 	./plugins/log/slog
 	./plugins/registry/consul
@@ -36,8 +43,6 @@ use (
 	./plugins/server/cmd/protoc-gen-go-orb
 	./plugins/server/drpc
 	./plugins/server/grpc
-	./plugins/server/hertz
 	./plugins/server/http
-	./plugins-experimental/registry/mdns
-	./plugins-experimental/registry/nats
+	./plugins/util/tests
 )
