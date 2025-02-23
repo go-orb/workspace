@@ -1,6 +1,4 @@
-go 1.23.0
-
-toolchain go1.23.2
+go 1.23.6
 
 use (
 	./examples/benchmarks/event
@@ -8,7 +6,7 @@ use (
 	./examples/event/simple
 	./go-orb
 	./plugins-experimental/client/orb/transport/basehertz
-    ./plugins-experimental/client/orb/transport/hertzh2c
+	./plugins-experimental/client/orb/transport/hertzh2c
 	./plugins-experimental/client/orb/transport/hertzhttp
 	./plugins-experimental/registry/mdns
 	./plugins-experimental/registry/nats
