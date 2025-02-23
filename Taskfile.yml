@@ -1,0 +1,34 @@
+version: "3"
+
+tasks:
+  lint:
+    desc: Run "golangci-lint" in all repositories
+    cmds:
+      - cmd: cd go-orb; golangci-lint run
+      - cmd: cd plugins; dagger call lint --root=.
+      - cmd: cd plugins-experimental; dagger call lint --root=.
+      - cmd: cd examples; dagger call lint --root=.
+
+  mod-tidy:
+    desc: Run "go mod tidy" in all repositories
+    cmds:
+      - cmd: cd go-orb; go mod tidy
+      - cmd: cd plugins; dagger call tidy --root=. source export --path=.
+      - cmd: cd plugins-experimental; dagger call tidy --root=. source export --path=.
+      - cmd: cd examples; dagger call tidy --root=. source export --path=.
+
+  mod-update:
+    desc: Run "go get -u -t ./..." in all repositories
+    cmds:
+      - cmd: cd go-orb; go get -u -t ./...
+      - cmd: cd plugins; dagger call update --root=. source export --path=.
+      - cmd: cd plugins-experimental; dagger call update --root=. source export --path=.
+      - cmd: cd examples; dagger call update --root=. source export --path=.
+
+  test:
+    desc: Run "go test ./... -v -race -cover" in all packages
+    cmds:
+      - cmd: cd go-orb; go test ./... -v -race -cover
+      - cmd: cd plugins; dagger call test --root=.
+      - cmd: cd plugins-experimental; dagger call test --root=.
+      - cmd: cd examples; dagger call test --root=.

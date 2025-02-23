@@ -13,3 +13,6 @@
 [submodule "plugins-experimental"]
 	path = plugins-experimental
 	url = https://github.com/go-orb/plugins-experimental.git
+[submodule "wire"]
+	path = wire
+	url = https://github.com/go-orb/wire.git
