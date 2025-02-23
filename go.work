@@ -4,6 +4,7 @@ use (
 	./examples/benchmarks/event
 	./examples/benchmarks/rps
 	./examples/event/simple
+	./examples/rest/middleware
 	./go-orb
 	./plugins-experimental/client/orb/transport/basehertz
 	./plugins-experimental/client/orb/transport/hertzh2c
