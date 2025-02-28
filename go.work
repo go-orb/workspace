@@ -15,6 +15,7 @@ use (
 	./plugins-experimental/server/hertz
 	./plugins/client/middleware/log
 	./plugins/client/orb
+	./plugins/client/orb/transport/basehttp
 	./plugins/client/orb/transport/drpc
 	./plugins/client/orb/transport/grpc
 	./plugins/client/orb/transport/h2c
