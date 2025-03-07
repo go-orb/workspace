@@ -3,6 +3,7 @@ go 1.23.6
 use (
 	./examples/benchmarks/event
 	./examples/benchmarks/rps
+	./examples/cmd/foobar
 	./examples/event/simple
 	./examples/rest/auth
 	./examples/rest/middleware
@@ -13,15 +14,17 @@ use (
 	./plugins-experimental/registry/mdns
 	./plugins-experimental/registry/nats
 	./plugins-experimental/server/hertz
+	./plugins/cli/urfave
+	./plugins/cli/tests
 	./plugins/client/middleware/log
 	./plugins/client/orb
-	./plugins/client/orb/transport/basehttp
-	./plugins/client/orb/transport/drpc
-	./plugins/client/orb/transport/grpc
-	./plugins/client/orb/transport/h2c
-	./plugins/client/orb/transport/http
-	./plugins/client/orb/transport/http3
-	./plugins/client/orb/transport/https
+	./plugins/client/orb_transport/basehttp
+	./plugins/client/orb_transport/drpc
+	./plugins/client/orb_transport/grpc
+	./plugins/client/orb_transport/h2c
+	./plugins/client/orb_transport/http
+	./plugins/client/orb_transport/http3
+	./plugins/client/orb_transport/https
 	./plugins/client/tests
 	./plugins/codecs/form
 	./plugins/codecs/goccyjson
@@ -29,8 +32,6 @@ use (
 	./plugins/codecs/jsonpb
 	./plugins/codecs/proto
 	./plugins/codecs/yaml
-	./plugins/config/source/cli/tests
-	./plugins/config/source/cli/urfave
 	./plugins/config/source/file
 	./plugins/config/source/http
 	./plugins/config/tests
@@ -40,6 +41,7 @@ use (
 	./plugins/log/slog
 	./plugins/registry/consul
 	./plugins/registry/regutil
+	./plugins/registry/memory
 	./plugins/registry/tests
 	./plugins/server/cmd/protoc-gen-go-orb
 	./plugins/server/drpc
