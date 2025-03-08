@@ -16,3 +16,6 @@
 [submodule "wire"]
 	path = wire
 	url = https://github.com/go-orb/wire.git
+[submodule "service"]
+	path = service
+	url = https://github.com/go-orb/service.git

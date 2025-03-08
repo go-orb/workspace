@@ -5,6 +5,7 @@ use (
 	./examples/benchmarks/rps
 	./examples/cmd/foobar
 	./examples/event/simple
+	./examples/realworld
 	./examples/rest/auth
 	./examples/rest/middleware
 	./go-orb
@@ -48,4 +49,5 @@ use (
 	./plugins/server/grpc
 	./plugins/server/http
 	./plugins/util/tests
+	./service/httpgateway
 )
