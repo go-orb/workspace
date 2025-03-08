@@ -9,7 +9,7 @@ We use `go.work` for development.
 Clone the repo:
 
 ```sh
-git clone --recurse-submodules -j8 https://github.com/go-orb/workspace.git
+git clone --recurse-submodules -j8 https://github.com/go-orb/workspace.git go-orb
 ```
 ## Development
 
