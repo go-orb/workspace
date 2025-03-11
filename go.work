@@ -18,6 +18,7 @@ use (
 	./plugins/cli/tests
 	./plugins/cli/urfave
 	./plugins/client/middleware/log
+	./plugins/client/middleware/retry
 	./plugins/client/orb
 	./plugins/client/orb_transport/basehttp
 	./plugins/client/orb_transport/drpc
