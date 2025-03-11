@@ -15,8 +15,8 @@ use (
 	./plugins-experimental/registry/mdns
 	./plugins-experimental/registry/nats
 	./plugins-experimental/server/hertz
-	./plugins/cli/urfave
 	./plugins/cli/tests
+	./plugins/cli/urfave
 	./plugins/client/middleware/log
 	./plugins/client/orb
 	./plugins/client/orb_transport/basehttp
@@ -38,16 +38,20 @@ use (
 	./plugins/config/tests
 	./plugins/event/natsjs
 	./plugins/event/tests
+	./plugins/kvstore/natsjs
+	./plugins/kvstore/natsjs_micro_tests
 	./plugins/log/lumberjack
 	./plugins/log/slog
 	./plugins/registry/consul
-	./plugins/registry/regutil
+	./plugins/registry/kvstore
 	./plugins/registry/memory
+	./plugins/registry/regutil
 	./plugins/registry/tests
 	./plugins/server/cmd/protoc-gen-go-orb
 	./plugins/server/drpc
 	./plugins/server/grpc
 	./plugins/server/http
+	./plugins/server/memory
 	./plugins/util/tests
 	./service/httpgateway
 )
