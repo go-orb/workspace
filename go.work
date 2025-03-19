@@ -9,9 +9,7 @@ use (
 	./examples/rest/auth
 	./examples/rest/middleware
 	./go-orb
-	./plugins-experimental/client/orb/transport/basehertz
-	./plugins-experimental/client/orb/transport/hertzh2c
-	./plugins-experimental/client/orb/transport/hertzhttp
+	./plugins-experimental/client/orb/transport/hertz
 	./plugins-experimental/registry/mdns
 	./plugins-experimental/registry/nats
 	./plugins-experimental/server/hertz
@@ -20,13 +18,9 @@ use (
 	./plugins/client/middleware/log
 	./plugins/client/middleware/retry
 	./plugins/client/orb
-	./plugins/client/orb_transport/basehttp
 	./plugins/client/orb_transport/drpc
 	./plugins/client/orb_transport/grpc
-	./plugins/client/orb_transport/h2c
 	./plugins/client/orb_transport/http
-	./plugins/client/orb_transport/http3
-	./plugins/client/orb_transport/https
 	./plugins/client/tests
 	./plugins/codecs/form
 	./plugins/codecs/goccyjson
