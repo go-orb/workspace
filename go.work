@@ -24,6 +24,7 @@ use (
 	./plugins/client/tests
 	./plugins/codecs/form
 	./plugins/codecs/goccyjson
+	./plugins/codecs/toml
 	./plugins/codecs/json
 	./plugins/codecs/jsonpb
 	./plugins/codecs/proto
