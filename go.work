@@ -19,6 +19,7 @@ use (
 	./plugins/client/orb_transport/drpc
 	./plugins/client/orb_transport/grpc
 	./plugins/client/orb_transport/http
+	./plugins/client/orb_transport/memory
 	./plugins/client/tests
 	./plugins/codecs/form
 	./plugins/codecs/goccyjson
