@@ -1,6 +1,11 @@
-go 1.23.6
+go 1.24
+
+toolchain go1.24.1
 
 use (
+	./envoy/orbproxy
+	./envoy/envoylog
+	./envoy/examples/helloworld/service/helloworld
 	./examples/benchmarks/event
 	./examples/benchmarks/rps
 	./examples/cmd/foobar
@@ -23,10 +28,11 @@ use (
 	./plugins/client/tests
 	./plugins/codecs/form
 	./plugins/codecs/goccyjson
-	./plugins/codecs/toml
 	./plugins/codecs/json
 	./plugins/codecs/jsonpb
+	./plugins/codecs/msgpack
 	./plugins/codecs/proto
+	./plugins/codecs/toml
 	./plugins/codecs/yaml
 	./plugins/config/source/file
 	./plugins/config/source/http
@@ -39,8 +45,8 @@ use (
 	./plugins/log/slog
 	./plugins/registry/consul
 	./plugins/registry/kvstore
-	./plugins/registry/memory
 	./plugins/registry/mdns
+	./plugins/registry/memory
 	./plugins/registry/regutil
 	./plugins/registry/tests
 	./plugins/server/cmd/protoc-gen-go-orb
